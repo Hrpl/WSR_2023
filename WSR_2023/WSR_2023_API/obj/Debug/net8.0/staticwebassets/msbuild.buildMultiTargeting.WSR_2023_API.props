@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\WSR_2023_API.props" />
+</Project>

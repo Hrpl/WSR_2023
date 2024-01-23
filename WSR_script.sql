@@ -1,0 +1,63 @@
+CREATE DATABASE wsr_db;
+
+GO
+
+USE wsr_db;
+GO
+CREATE TABLE Users
+(
+    Login NVARCHAR(30) PRIMARY KEY,
+    Password NVARCHAR(50) NOT NULL,
+    Name NVARCHAR(20),
+    SNAME NVARCHAR(20),
+    Role INT NOT NULL,
+    Number_Telephone NVARCHAR(20) UNIQUE,
+    Email NVARCHAR(50) UNIQUE,
+
+    FOREIGN KEY (Role) REFERENCES Role(Kod_Role)
+);
+GO
+CREATE TABLE Role
+(
+    Kod_Role INT PRIMARY KEY IDENTITY,
+    Job NVARCHAR(20) UNIQUE
+);
+GO
+CREATE TABLE Pass
+(
+    Id_Pass INT PRIMARY KEY IDENTITY,
+    Date_Activ DATETIME NOT NULL,
+    Date_End DATETIME NOT NULL
+);
+GO
+CREATE TABLE Groups
+(
+    Id_Group INT PRIMARY KEY IDENTITY,
+    Id_Pass INT NOT NULL,
+    Count_Pep INT NOT NULL CHECK(Count_Pep > 0),
+    Id_Gid INT NOT NULL,
+    Date_Visit DATETIME NOT NULL
+
+    FOREIGN KEY (Id_Pass) REFERENCES Pass(Id_Pass),
+    FOREIGN KEY (Id_Gid) REFERENCES Gids(Id_Gid)
+);
+GO
+CREATE TABLE Visitors
+(
+    Name NVARCHAR(20),
+    Surname NVARCHAR(20),
+    Number_Pasport NVARCHAR(12) PRIMARY KEY,
+    Id_Group INT NOT NULL,
+    Id_Pass INT NOT NULL
+
+    FOREIGN KEY (Id_Group) REFERENCES Groups(Id_Group),
+    FOREIGN KEY (Id_Pass) REFERENCES Pass(Id_Pass)
+);
+GO
+CREATE TABLE Gids
+(
+    Id_Gid INT PRIMARY KEY,
+    Name NVARCHAR(20) NOT NULL,
+    Surname NVARCHAR(20) NOT NULL,
+    Number_Lec NVARCHAR(20) NOT NULL
+);

@@ -1,0 +1,15 @@
+{
+  "version": 2,
+  "dgSpecHash": "UJ9+lOSsLEPbzUk3xaZaD56wATY6hUwva7L9gGzPALY2Q44u7FqRwgf+HpnMEeuDGsbdtJ9Xk6PIfCYjgNf9yQ==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Денис\\Desktop\\WSR_2023\\WSR_2023\\WSR_2023_API\\WSR_2023_API.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Денис\\.nuget\\packages\\microsoft.extensions.apidescription.server\\6.0.5\\microsoft.extensions.apidescription.server.6.0.5.nupkg.sha512",
+    "C:\\Users\\Денис\\.nuget\\packages\\microsoft.openapi\\1.2.3\\microsoft.openapi.1.2.3.nupkg.sha512",
+    "C:\\Users\\Денис\\.nuget\\packages\\swashbuckle.aspnetcore\\6.4.0\\swashbuckle.aspnetcore.6.4.0.nupkg.sha512",
+    "C:\\Users\\Денис\\.nuget\\packages\\swashbuckle.aspnetcore.swagger\\6.4.0\\swashbuckle.aspnetcore.swagger.6.4.0.nupkg.sha512",
+    "C:\\Users\\Денис\\.nuget\\packages\\swashbuckle.aspnetcore.swaggergen\\6.4.0\\swashbuckle.aspnetcore.swaggergen.6.4.0.nupkg.sha512",
+    "C:\\Users\\Денис\\.nuget\\packages\\swashbuckle.aspnetcore.swaggerui\\6.4.0\\swashbuckle.aspnetcore.swaggerui.6.4.0.nupkg.sha512"
+  ],
+  "logs": []
+}

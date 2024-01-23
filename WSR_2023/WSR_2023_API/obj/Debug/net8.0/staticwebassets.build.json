@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "qM8nMTRg7LyC0wAIXssXWgT5OEXDioBYHeaLwuj86AM=",
+  "Source": "WSR_2023_API",
+  "BasePath": "_content/WSR_2023_API",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}
